@@ -1,3 +1,152 @@
+/******************************
+BASE STYLES
+*******************************/
+
 body {
-	
+	margin: 0 auto;
+	font-family: arial, sans-serif; 
+	/* I can't quite replicate the text, 
+	I would have to ask */
+	color: black;
+	background-color: rgb(222,222,222);
+	letter-spacing: 0.04em;
 }
+
+h1 {
+	font-size: 1.75em; /* 28 / 16 */
+	font-weight: bold;
+	padding: 1em 0;
+}
+
+h2 {
+	font-size: 1.125em; /* 18 / 16 */
+	padding: 0.5em 0;
+}
+
+p {
+	line-height: 1.6em;
+	font-size: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	color: rgb(90,90,90);
+}
+
+.wrap {
+	margin: 0 auto;
+	padding: 0 1em;
+	background-color: white;
+	text-align: center;
+}
+
+.prof_sec img {
+	max-width: 100%;
+	margin: 1em 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, 
+a:visited {
+	color: inherit;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+/******************************
+STYLES
+*******************************/
+
+ul li {
+	color: black;
+	font-weight: bold;
+	background-color: white;
+}
+
+.intro p,
+#contact p {
+	color: rgb(170,170,170);
+}
+
+#portfolio,
+.contact h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header,
+#contact {
+	background-color: rgb(250,250,250);
+}
+
+#contact {
+	border-bottom: 1px solid rgb(220,220,220);
+}
+
+span {
+	font-weight: bold;
+}
+
+footer {
+	font-weight: bold;
+}
+
+
+
+/******************************
+LAYOUT STYLES
+*******************************/
+
+ul li {
+	margin: 5px;
+	padding: 10px;
+}
+
+ul {
+	margin-bottom: 50px;
+}
+
+.intro p {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.intro img {
+	width: 70%;
+}
+
+#portfolio {
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+#contact {
+	margin-top: 2em;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+#contact h2 {
+	margin-bottom: 20px;
+}
+
+span {
+	margin-left: 15px;
+}
+
+footer {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+
+
+
+
