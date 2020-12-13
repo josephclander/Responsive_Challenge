@@ -1,0 +1,312 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  color: #000;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+h2 {
+  font-size: 1.125em;
+  padding: 0.5em 0;
+}
+
+p {
+  font-size: 1em;
+  color: #5a5a5a;
+  line-height: 1.6em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+ul li {
+  font-weight: bold;
+  color: #000;
+  margin: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+}
+
+span {
+  margin-left: 15px;
+}
+
+section,
+#contact,
+header,
+.wrap {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+#portfolio,
+#contact h2,
+span,
+footer {
+  font-weight: bold;
+}
+
+#contact,
+section,
+header {
+  text-align: center;
+}
+
+#portfolio,
+#contact h2 {
+  text-transform: uppercase;
+}
+
+.intro p {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: #aaaaaa;
+}
+
+#portfolio {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+#portfolio,
+.portfolio-imgs {
+  background-color: #fff;
+}
+
+#contact {
+  background-color: #fafafa;
+}
+
+#contact p {
+  color: #aaaaaa;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+.intro img {
+  width: 70%;
+}
+
+.portfolio-section img {
+  max-width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#contact {
+  margin-top: 2em;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#text {
+  padding-bottom: 30px;
+}
+
+.non_mobile {
+  display: none;
+}
+
+header {
+  background-color: #fafafa;
+}
+
+.navigation {
+  padding-bottom: 2em;
+}
+
+.wrap {
+  border-top: 1px solid gainsboro;
+}
+
+footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#stu-name {
+  float: left;
+}
+
+/* Back to Top Link */
+#btt {
+  float: right;
+}
+
+/******************************
+MEDIA QUERY - TABLET
+*******************************/
+
+@media (min-width: 768px) {
+  #contact p {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  #contact {
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+  }
+
+  .intro {
+    padding-bottom: 65px;
+  }
+
+  .intro p {
+    max-width: 50%;
+    display: inline;
+    text-align: left;
+    padding: 0 1em;
+    float: left;
+  }
+
+  .intro img {
+    float: right;
+    max-width: 50%;
+    display: inline;
+    padding-top: 0;
+  }
+
+  section {
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+  }
+
+  .portfolio-section {
+    display: inline-block;
+    float: left;
+    max-width: 50%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .portfolio-section:nth-child(even) {
+    clear: left;
+  }
+
+  /******************************
+Float fix
+*******************************/
+
+  .clearfix:after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+
+  header {
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+  }
+
+  .navigation {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .nav-bar li {
+    display: inline-block;
+    background-color: inherit;
+  }
+
+  .wrap {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  #btt {
+    display: none;
+  }
+
+  /******************************
+SWAPPING FOOTER NAVIGATION
+*******************************/
+  .non_mobile {
+    display: inline-block;
+    float: right;
+  }
+
+  .non_mobile li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 1em;
+  }
+}
+
+/******************************
+MEDIA QUERY - DESKTOP
+*******************************/
+
+@media (min-width: 1024px) {
+  .portfolio-section {
+    max-width: 33.33333%;
+  }
+
+  .portfolio-section:nth-child(even) {
+    clear: none;
+  }
+
+  .portfolio-section:nth-child(5n) {
+    clear: left;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .name h1 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-right: 0;
+    line-height: 2em;
+  }
+
+  .nav-bar {
+    float: right;
+  }
+
+  .nav-bar ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-bar li {
+    float: left;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-left: 2em;
+  }
+}
